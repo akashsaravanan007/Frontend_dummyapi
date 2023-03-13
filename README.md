@@ -1,5 +1,4 @@
-# AI4Bharat | Frontend Developer Hiring Challenge
-
+# Front end with dummy api
 interactive interface to showcase basic components of a web page in a
 presentable manner using React.
 
