@@ -1,0 +1,29 @@
+<Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>{selectedUser.name}</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>{selectedUser.address.street}, {selectedUser.address.city}{' '}
+          {selectedUser.address.zipcode}
+        
+          <p>Phone: {selectedUser.phone}</p>
+          <p>Website: {selectedUser.website}</p>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+           
+        </Modal.Footer>
+      </Modal>
+
+
+      <div className="modal">
+        <h2>{selectedUser.name}</h2>
+        <p>
+          {selectedUser.address.street}, {selectedUser.address.city}{' '}
+          {selectedUser.address.zipcode}
+        </p>
+        <p>Phone: {selectedUser.phone}</p>
+        <p>Website: {selectedUser.website}</p>
+        <button onClick={handleCloseModal}>X</button>
+      </div>
